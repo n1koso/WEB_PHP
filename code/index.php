@@ -78,5 +78,9 @@ echo round(sqrt(379), 1) . "<br>";
 echo round(sqrt(379), 2) . "<br>";
 
 $arr1 = ["floor" => floor(sqrt(587)) , "ceil" => ceil(sqrt(587))];
-echo $arr1["floor"]. "<br>" . $arr1["ceil"];;
+echo $arr1["floor"] . "<br>" . $arr1["ceil"] . "<br>";;
 
+echo "<br>14.4 Работа с min и max<br>";
+
+echo min(4,-2, 5, 19, -130, 0, 10) . "<br>";
+echo max(4, -2, 5, 19, -130, 0, 10) . "<br>";
