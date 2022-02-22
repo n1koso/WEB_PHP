@@ -141,3 +141,29 @@ function printStringReturnNumber()
 }
 $my_num = printStringReturnNumber();
 echo $my_num . "<br>";
+
+
+echo "<br>16. Функции<br>";
+function increaseEnthusiasm($str = "")
+{
+    return $str . "!";
+}
+echo increaseEnthusiasm("Goodbye") . "<br>";
+
+function repeatThreeTimes($str = "")
+{
+    $i = 0;
+    while($i < 3)
+    {
+        echo $str . " ";
+        $i ++;
+    }
+}
+echo repeatThreeTimes("ha") . "<br>";
+
+echo increaseEnthusiasm(repeatThreeTimes("HA"));
+
+function cut($st = "", $num = 10)
+{
+    return substr($st , 0, $num);
+}
