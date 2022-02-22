@@ -34,6 +34,16 @@ echo $days_per_language . "<br>";
 
 echo "<br>12. Степень<br>";
 
-echo 8**2;
+echo 8**2 . "<br>";
 
 
+echo "<br>13. Операторы присвоения<br>";
+
+$my_num = 123;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
