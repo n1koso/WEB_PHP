@@ -94,3 +94,13 @@ for($i = 0; $i < 10; $i++)
     $arr[$i] = rand(1, 100);
     echo $arr[$i] . " ";
 }
+
+echo "<br>14.6 Работа с модулем<br>";
+
+echo abs($a - $b) . "<br>";
+$arr3 = [1, 2, -1, -2, 3, -3];
+for($i = 0; $i < 6; $i++)
+{
+    $arr3[$i] = abs($arr3[$i]);
+    echo $arr3[$i] . " ";
+}
