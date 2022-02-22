@@ -46,4 +46,14 @@ $answer *= 2;
 $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
-echo $answer;
+echo $answer. "<br>";
+
+
+echo "<br>14. Математические функции<br>";
+echo "<br>14.1 Работа с %<br>";
+$a=10;
+$b=3;
+echo $a % $b;
+if(($a % $b) == 0)
+    echo "<br>Делится<br>";
+else echo "<br>Делится с остатком. Остаток = " . ($a % $b) . "<br>";
