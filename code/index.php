@@ -71,3 +71,12 @@ foreach ($arr as $value)
     $k += $value**2;
 echo "<br>" . sqrt($k) . "<br>";
 
+echo "<br>14.3 Работа с функциями округления<br>";
+
+echo round(sqrt(379), 0) . "<br>";
+echo round(sqrt(379), 1) . "<br>";
+echo round(sqrt(379), 2) . "<br>";
+
+$arr1 = ["floor" => floor(sqrt(587)) , "ceil" => ceil(sqrt(587))];
+echo $arr1["floor"]. "<br>" . $arr1["ceil"];;
+
