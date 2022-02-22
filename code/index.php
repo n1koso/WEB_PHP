@@ -50,10 +50,24 @@ echo $answer. "<br>";
 
 
 echo "<br>14. Математические функции<br>";
+
 echo "<br>14.1 Работа с %<br>";
+
 $a=10;
 $b=3;
 echo $a % $b;
 if(($a % $b) == 0)
     echo "<br>Делится<br>";
 else echo "<br>Делится с остатком. Остаток = " . ($a % $b) . "<br>";
+
+echo "<br>14.2 Работа со степенью и корнем<br>";
+
+$st = pow(2,10);
+echo "$st<br>";
+echo sqrt(245);
+$arr = [4, 2, 5, 19, 13, 0, 10];
+$k = 0;
+foreach ($arr as $value)
+    $k += $value**2;
+echo "<br>" . sqrt($k) . "<br>";
+
