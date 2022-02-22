@@ -104,3 +104,28 @@ for($i = 0; $i < 6; $i++)
     $arr3[$i] = abs($arr3[$i]);
     echo $arr3[$i] . " ";
 }
+
+echo "<br>14.7 Общее<br>";
+
+$num = 30;
+$arr4 = [];
+$k = 30;
+for($i = 0; $i < $num; $i++)
+{
+    if(($num % $k) == 0)
+    {
+        $arr4[$i] = ($num / $k);
+        echo $arr4[$i] . " ";
+    }
+    $k--;
+}
+
+$arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum = 0;
+$count = 0;
+while($sum <= 10)
+{
+    $sum += $arr5[$count];
+    $count++;
+}
+echo "<br>$count<br>";
