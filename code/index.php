@@ -105,6 +105,7 @@ for($i = 0; $i < 6; $i++)
     echo $arr3[$i] . " ";
 }
 
+echo "<br>";
 echo "<br>14.7 Общее<br>";
 
 $num = 30;
@@ -129,3 +130,14 @@ while($sum <= 10)
     $count++;
 }
 echo "<br>$count<br>";
+
+
+echo "<br>15. Функции<br>";
+
+function printStringReturnNumber()
+{
+    echo "Hi!<br>";
+    return 28;
+}
+$my_num = printStringReturnNumber();
+echo $my_num . "<br>";
