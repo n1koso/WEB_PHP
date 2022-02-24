@@ -324,3 +324,29 @@ for($i = 0; $i < 20; $i++)
 for($i = 1; $i < 20; $i++)
     echo $pyr[$i] . "<br>";
 
+
+echo "<br>20. Комбинация функций<br>";
+
+$arr13 = [2,4,6,8,10];
+$s = array_sum($arr13) / count($arr13);
+echo $s . "<br>";
+
+$from = 1;
+$to = 100;
+$sum = ($from + $to)/2 * ($to - $from + 1);
+echo $sum . "<br>";
+
+$arr14 = [1,4,9,16,25];
+$ar14 = (array_map('sqrt' , $arr14));
+print_r($ar14);
+
+echo "<br>";
+$letters = range('a', 'z');
+$numbers = range(1, 26);
+$arr15 = array_combine($letters, $numbers);
+print_r($arr15);
+echo "<br>";
+
+$string = '1234567890';
+$arr16 = str_split($string , 2);
+echo array_sum($arr16);
