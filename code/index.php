@@ -191,3 +191,77 @@ function SumOfNumbers($n)
         SumOfNumbers($s);
     return $s;
 }
+
+
+echo "<br>17. Массивы<br>";
+
+$arr7 = [];
+$x = "";
+for($i = 0; $i < 10; $i++)
+{
+    $arr7[$i] = $x;
+    $x .= "x";
+}
+for($i = 1; $i < 10; $i++)
+    echo $arr7[$i] . "<br>";
+
+function arrayFill($v, $n)
+{
+    $a = [];
+    for($i = 0; $i < $n; $i++)
+    {
+        $a[$i] = $v;
+        echo $a[$i] . " ";
+    }
+    return $a;
+}
+
+$arr8 = [[1, 2, 3],  [4, 5],  6];
+function ItemSum($arr)
+{
+    $sum = array_sum($arr);
+    foreach ($arr as $item)
+    {
+        if(is_array($item))
+            $sum += ItemSum($item);
+    }
+    return $sum;
+}
+echo ItemSum($arr8) . "<br>";
+
+$arr9 = [];
+for($i = 0; $i < 3; $i++)
+{
+    $k = 0;
+    for($j = 0; $j < 3 ; $j++)
+    {
+        $arr9[$i][$j] = $j + $k;
+    }
+    $k += 3;
+}
+
+$arr10 = [2, 5, 3, 9];
+$result = 0;
+for($i = 0; $i < 4; $i+=2)
+{
+    $result += $arr10[$i] * $arr10[$i+1];
+}
+echo $result . "<br>";
+
+$user = ['name' => 'Anastasia','surname'=> 'Osokina', 'patronymic' => 'Igorevna'];
+foreach ($user as $str)
+    echo $str . " ";
+
+echo "<br>";
+$date = ['year' => 2022 , 'month' => 2 , 'day' => 24];
+foreach ($date as $value)
+    echo $value . " ";
+echo "<br>";
+
+$arr11 = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr11) . "<br>";
+
+echo $arr11[count($arr11) - 1] . " ";
+echo $arr11[count($arr11) - 2] . "<br>";
+
+
