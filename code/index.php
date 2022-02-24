@@ -161,9 +161,33 @@ function repeatThreeTimes($str = "")
 }
 echo repeatThreeTimes("ha") . "<br>";
 
-echo increaseEnthusiasm(repeatThreeTimes("HA"));
+echo increaseEnthusiasm(repeatThreeTimes("HA")) . "<br>";
 
 function cut($st = "", $num = 10)
 {
     return substr($st , 0, $num);
+}
+
+$arr6 = [1, 2, 3, 4, 5];
+function rec($arr6, $i)
+{
+    if($i >= 5)
+        return;
+    echo $arr6[$i] . " ";
+    $i ++;
+    rec($arr6, $i);
+}
+echo rec($arr6, 0) . "<br>";
+
+function SumOfNumbers($n)
+{
+    $s = 0;
+    while($n > 0)
+    {
+        $s += ($n % 10);
+        $n /= 10;
+    }
+    if($s > 9)
+        SumOfNumbers($s);
+    return $s;
 }
