@@ -265,3 +265,51 @@ echo $arr11[count($arr11) - 1] . " ";
 echo $arr11[count($arr11) - 2] . "<br>";
 
 
+echo "<br>18. Конструкция if else<br>";
+
+function TwoNumSum($a , $b)
+{
+    if(($a + $b) > 10)
+        return true;
+    else return false;
+}
+
+function TwoNumEq($a , $b)
+{
+    if($a == $b)
+        return true;
+    else return false;
+}
+
+$test = 0;
+if ($test == 0)
+{
+    echo 'верно' . "<br>";
+}
+
+$age = 19;
+function DigitSum($n)
+{
+    $s = 0;
+    while($n > 0)
+    {
+        $s += $n % 10;
+        $n = floor($n / 10);
+    }
+    return $s;
+}
+if($age < 10 || $age > 99)
+    echo "Не входит в диапазон" . "<br>";
+else
+{
+    if(DigitSum($age) < 10)
+        echo "Сумма однозначна" . "<br>";
+    else echo "Сумма двузначна" . "<br>";
+}
+
+$arr12 = [1,2,3];
+if (count($arr12) == 3)
+    echo array_sum($arr12);
+
+
+echo "<br>19. Циклы<br>";
