@@ -313,3 +313,14 @@ if (count($arr12) == 3)
 
 
 echo "<br>19. Циклы<br>";
+
+$pyr = [];
+$x = "";
+for($i = 0; $i < 20; $i++)
+{
+    $pyr[$i] = $x;
+    $x .= "x";
+}
+for($i = 1; $i < 20; $i++)
+    echo $pyr[$i] . "<br>";
+
